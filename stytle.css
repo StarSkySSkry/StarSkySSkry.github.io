@@ -1,0 +1,19 @@
+h1:hover {
+    background-color: chartreuse;
+}
+
+.food{
+    color: aqua;
+}
+
+.people{
+    color: bisque;
+}
+
+.background{
+    background-color: black;
+}
+
+#css-h1{
+    color: red;
+}
