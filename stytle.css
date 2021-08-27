@@ -1,19 +1,81 @@
-h1:hover {
-    background-color: chartreuse;
+body{
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url("./img/train.png");
+    background-size: 105%;
+    background-color: rgb(219, 255, 255);
+}
+html,body{
+    height: 100%;
+}
+.side_menu{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, rgb(223, 248, 239), rgb(190, 241, 243));
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 0px 100px hsla(240, 27%, 48%, 0.6);
+    border-radius: 10px 10px 10px 10px;
+    transform: translateX(-100%);
+    transition: 0.3s;
 }
 
-.food{
-    color: aqua;
+nav a{
+    display: block;
+    padding: 10px;
+    color: rgb(35, 58, 56);
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
 }
 
-.people{
-    color: bisque;
+nav a .fas{
+    margin-right: -0.6em;
+    transform: scale(0);
+    transition: 0.3s;
 }
 
-.background{
-    background-color: black;
+nav a:hover .fas{
+    margin-right: 1em;
+    transform: scale(1);
 }
 
-#css-h1{
-    color: red;
+nav a + a::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid rgb(255, 255, 255);
+    left: 10px;
+    right: 10px;
+    top: 0px;
+}
+
+.side_menu label{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: hsla(180, 68%, 81%, 0.9);
+    color: rgb(0, 0, 0);
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+}
+#side_menu_switch{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+#side_menu_switch:checked + .side_menu{
+    transform: translateX(0);
+}
+#side_menu_switch:checked + .side_menu label .fas{
+    transform: scaleX(-1);
 }
