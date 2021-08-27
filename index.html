@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--下面表達的是網頁的編碼-->
-        <meta charset="UTF-8"></meta>
-        <title>さりいㄉ家</title>
-        <meta name="author" content="Star Sky"/>
-        <meta name="description" content="交友網站"/>
-        <meta name="keywords" content="star, sky, hhh"/>
+        <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="stytle.css"/>
+        <title>starskyのweb</title>
+        <link rel="stylesheet" href="blogstytle.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     </head>
     <body>
-        <div>
-            <h1 style="background-color: violet;">你好</h1>
-            <p style="background-color: wheat;">こんにちは～</p>
+        <input type="checkbox" name="" id="side_menu_switch">
+        <div class="side_menu">
+            <nav>
+                <a href="#"><i class="fas fa-address-card"></i>首頁</a>
+                <a href="#"><i class="fas fa-align-left"></i>文章</a>
+                <a href="#"><i class="fas fa-code-branch"></i>程式</a>
+                <a href="#"><i class="fas fa-bolt"></i>電學</a>
+                <a href="#"><i class="fas fa-info"></i>關於我</a>
+            </nav>
+            <label for="side_menu_switch">
+                <i class="fas fa-angle-right"></i>
+            </label>
         </div>
-        <h1>想說的話</h1>
-        <input type="text" placeholder="請輸入" style="background-color: thistle;"/>	
-        <a href="page02.html">2</a>
+        <script src="blogscript.js"></script>
     </body>
 </html>
