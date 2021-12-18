@@ -12,6 +12,22 @@
     </head>
     <body>
         wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+        <div id="divid"> </div>
         <iframe width="1536" height="864" src="https://www.youtube-nocookie.com/embed/ISbvot_zEe0?controls=0&autoplay=1&mute=1&hd=1&vq=hd2160" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
+    <script type="text/javascript"> 
+    var divid = document.getElementById("divid"); 
+        setInterval("settime()",1000); //創建一個定時器,一秒調用一次這個方法 
+        function settime(){ //創建方法 
+            var dd = new Date(); //創建一個時間類對象 
+            var y = dd.getFullYear(); //返回年 
+            var m = dd.getMonth() + 1; //返回月 
+            var d = dd.getDate(); //返回日 
+            var h = dd.getHours(); //返回時 
+            var i = dd.getMinutes(); //返回分 
+            var s = dd.getSeconds(); //返回秒 
+            var date = y+"/"+m+"/"+d+" "+h+":"+i+":"+s; //將獲取的所有值組合成一個變量 
+            divid.innerHTML=date; //將獲取的時間值輸入到div對象中,也可以用innerText 
+        } 
+    </script> 
 </html>
